@@ -1,0 +1,69 @@
+body {
+    background-color: rgb(220,220,220);
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    min-height: 100vh;
+    display: felx;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    padding: 3rem;
+    border-radius: 1rem;
+    border: 1px solid whitesmoke;
+    display: felx;
+    justify-content: center;
+    align-items: center;
+}
+
+#backgroundcontainer {
+    background-color: whitesmoke;
+}
+
+#generatecontainer {
+    background-color: white;
+    padding: 3rem;
+}
+
+h1 {
+    text-align: center;
+    margin: 0;
+
+}
+
+hr {
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 1px;
+}
+
+#passwordinput {
+    height: 80px;
+    width: 600px;
+    position: absolute;
+    border-style: dotted;
+    display: flex;
+    margin: 0em;
+    justify-content: right;
+    align-items: center;
+    text-align: center;
+    word-break: break-all;
+}
+
+#generate {
+    margin-top: 3em;
+    background-color: brown;
+    color: white;
+    border: none;
+}
+#copy-button {
+    margin-top: 3em;
+    background-color: lightgray;
+    color: white;
+    border: none;
+}

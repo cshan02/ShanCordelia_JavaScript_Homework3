@@ -1,6 +1,7 @@
 body {
     background-color: rgb(220,220,220);
     margin: 0;
+    width: 100%;
     font-family: Georgia, 'Times New Roman', Times, serif;
     min-height: 100vh;
     display: felx;
@@ -42,7 +43,7 @@ hr {
   border-width: 1px;
 }
 
-#passwordinput {
+#passworddisply {
     height: 80px;
     width: 600px;
     position: absolute;
@@ -55,14 +56,34 @@ hr {
     word-break: break-all;
 }
 
-#generate {
+#sliderbar {
     margin-top: 3em;
+}
+
+#slider {
+    width: 100%;
+}
+
+#length {
+    margin: 0em;
+    justify-content: right;
+    align-items: center;
+    text-align: center;
+    color: lightsteelblue;
+}
+
+#bnt {
+    justify-content: space-between;
+    position: relative;
+
+}
+
+#generatebutton {
     background-color: brown;
     color: white;
     border: none;
 }
-#copy-button {
-    margin-top: 3em;
+#copybutton {
     background-color: lightgray;
     color: white;
     border: none;

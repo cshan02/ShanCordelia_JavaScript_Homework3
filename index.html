@@ -17,19 +17,30 @@
       <div class="row">
       <h3>Generate a Password</h3>
       </div>
+      <hr class="my-4">
       <div class="row" id="inputarea">
       <hr class="my-4">
       <label for="exampleFormControlTextarea1"></label>
-      <textarea readonly id="passwordinput" placeholder="Your Secure Password"></textarea>
+      <input type="text" id="passworddisply" placeholder="Your Secure Password" maxlength="128" minlength="8">
     </div>
-    <div class="row" id="bnt">
+    <div class="row">
+      <div class="col-12" id="sliderbar">
+      <input type="range" min="8" max="128" name="slider" id="slider">
+      </div>
+    <div class="row" id="length"></div>  
+    </div>
     <hr class="my-4">
-    <div class="col">
-    <button class="btn btn-primary" id="generate" type="submit">Generate Password</button>
+    <div class="row" id="bnt">
+    <div class="col-6">
+    <button onclick="generate()" class="btn btn-primary" id="generatebutton" type="submit">
+      Generate Password
+    </button>
     </div>
-    <div class="col">
-    <button class="btn btn-default" id="copy-button" type="button" data-toggle="tooltip" data-placement="button" title="Copy to Clipboard">Copy to Clipboard</button>
-    </div>
+    <div class="col-6">
+    <button onclick="copyPassword()" class="btn btn-default" id="copybutton" type="button" data-toggle="tooltip" data-placement="button" title="Copy to Clipboard">
+      Copy to Clipboard
+    </button>
+  </div>
   </div>
   </div>
   </div>

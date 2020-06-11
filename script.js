@@ -25,3 +25,13 @@ function copyPassword(){
 /* function to show the length display of 25*/
 document.getElementById("length").innerHTML = "Length: 25";
 
+/* function to set length based on slider position*/
+document.getElementById("slider").oninput = function(){
+    if(document.getElementById("slider").value > 0){
+        document.getElementById("length").innerHTML = "Length: " + document.getElementById("slider").value;
+    }
+    else{
+        document.getElementById("length").innerHTML = "Length: 1";
+    }
+    console.log(length)
+}
